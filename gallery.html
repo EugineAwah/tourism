@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Cameroon Tourism</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Cameroon Tourism</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="culture.html">Culture</a>
+      <a href="travel.html">Travel info</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Photo gallery</h1>
+        <p>Landscapes, wildlife, and cultural moments from across Cameroon.</p>
+      </div>
+    </section>
+
+    <section class="container gallery-grid">
+      <button class="gallery-item" data-full="assets/images/mount-cameroon.jpg">
+        <img src="assets/images/mount-cameroon.jpg" alt="Mount Cameroon view" />
+      </button>
+      <button class="gallery-item" data-full="assets/images/waza.jpg">
+        <img src="assets/images/waza.jpg" alt="Waza National Park wildlife" />
+      </button>
+      <button class="gallery-item" data-full="assets/images/limbe.jpg">
+        <img src="assets/images/limbe.jpg" alt="Limbe coastline" />
+      </button>
+      <button class="gallery-item" data-full="assets/images/bamenda.jpg">
+        <img src="assets/images/bamenda.jpg" alt="Bamenda Highlands" />
+      </button>
+      <button class="gallery-item" data-full="assets/images/ngondo.jpg">
+        <img src="assets/images/ngondo.jpg" alt="Ngondo festival" />
+      </button>
+      <button class="gallery-item" data-full="assets/images/ndole.jpg">
+        <img src="assets/images/ndole.jpg" alt="Ndolé dish" />
+      </button>
+    </section>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <img id="lightbox-image" src="" alt="" />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Cameroon Tourism</strong>
+        <p>Visual stories from across regions.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="culture.html">Culture</a>
+        <a href="travel.html">Travel info</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p>© 2025 Cameroon Tourism Demo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

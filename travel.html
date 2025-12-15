@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel information — Cameroon Tourism</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Cameroon Tourism</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="culture.html">Culture</a>
+      <a href="travel.html" class="active">Travel info</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Plan your trip</h1>
+        <p>Visa guidance, transport options, and safety tips for travelling in Cameroon.</p>
+      </div>
+    </section>
+
+    <section class="container tabs">
+      <div class="tablist" role="tablist" aria-label="Travel topics">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-air" id="tab-air">Air travel</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-road" id="tab-road">Road travel</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-rail" id="tab-rail">Rail travel</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-visa" id="tab-visa">Visa & safety</button>
+      </div>
+
+      <div class="tabpanel active" role="tabpanel" id="panel-air" aria-labelledby="tab-air">
+        <h2>Air travel</h2>
+        <p>International gateways: Douala International Airport (DLA) and Yaoundé Nsimalen International Airport (NSI). Regional airports connect major cities.</p>
+        <ul class="bullets">
+          <li><strong>Tip:</strong> Check seasonal schedules and weather conditions.</li>
+          <li><strong>Local:</strong> Domestic routes are limited; plan ground transfers.</li>
+        </ul>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="panel-road" aria-labelledby="tab-road">
+        <h2>Road travel</h2>
+        <p>Highways link major cities; rural roads can be challenging during rainy seasons.</p>
+        <ul class="bullets">
+          <li><strong>Tip:</strong> Use reputable bus lines or private drivers.</li>
+          <li><strong>Safety:</strong> Day travel preferred for visibility.</li>
+        </ul>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="panel-rail" aria-labelledby="tab-rail">
+        <h2>Rail travel</h2>
+        <p>Camrail line from Douala to Ngaoundéré offers long-distance travel across regions.</p>
+        <ul class="bullets">
+          <li><strong>Tip:</strong> Book in advance; verify schedules.</li>
+          <li><strong>Comfort:</strong> Choose sleeper options for overnight routes.</li>
+        </ul>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="panel-visa" aria-labelledby="tab-visa">
+        <h2>Visa & safety</h2>
+        <p>Visitors typically require a visa; consult official consular guidance. Prioritize health precautions and local advisories.</p>
+        <ul class="bullets">
+          <li><strong>Docs:</strong> Passport validity and visa requirements.</li>
+          <li><strong>Health:</strong> Vaccinations and travel insurance recommended.</li>
+          <li><strong>Local:</strong> Respect cultural norms and seek local guidance.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Cameroon Tourism</strong>
+        <p>Plan with practical travel guidance.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="culture.html">Culture</a>
+        <a href="travel.html" class="active">Travel info</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p>© 2025 Cameroon Tourism Demo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

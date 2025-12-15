@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Cameroon Tourism</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Cameroon Tourism</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="culture.html">Culture</a>
+      <a href="travel.html">Travel info</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact us</h1>
+        <p>Questions or feedback? We’d love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="container contact-grid">
+      <form class="contact-form" aria-label="Contact form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-note">Demo only — messages are not actually sent.</p>
+      </form>
+
+      <aside>
+        <h2>About this demo</h2>
+        <p>This is a student project showcasing tourism and travel information for Cameroon, designed by Azinyu.</p>
+        <p>For collaboration or suggestions, reach out via the form.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Cameroon Tourism</strong>
+        <p>Get in touch with the project team.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="culture.html">Culture</a>
+        <a href="travel.html">Travel info</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p>© 2025 Cameroon Tourism Demo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
